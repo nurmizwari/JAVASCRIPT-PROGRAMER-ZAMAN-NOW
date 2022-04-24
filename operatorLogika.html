@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- operator logika -->
+    <!-- &&  kalau nilai 1 dan 2 nilai nya true maka hsilnya true selain itu maka false
+    || atau   nilai 1 dan nilai 2 salah satu saja ada yang true maka hasilnya true
+
+    ! or operator kebalikan
+-->
+    <script>
+      const nilaiUjian = 90;
+      const nilaiAbsensi = 70;
+
+      const lulusUjian = nilaiUjian > 75;
+      document.writeln(lulusUjian);
+      const lulusAbsensi = nilaiAbsensi > 75;
+      document.writeln(lulusAbsensi);
+
+      const lulus = lulusUjian && lulusAbsensi;
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>
