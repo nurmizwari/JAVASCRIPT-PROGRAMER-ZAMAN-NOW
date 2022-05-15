@@ -9,7 +9,27 @@
   <body>
     <script>
       let arrayKosong = [];
-      let arrayNama = ["nur mizwari", "eko", "ahmad"];
+
+      let arrayNama = ["nur mizwari", "eko", "ahmad", 1, true];
+
+      // menambahkan data pada array
+      const names = [];
+      names.push("nur mizwari");
+      names.push(1, "mizwari group");
+      console.table(names);
+
+      // mengubah nilai array
+      names[0] = "programmer";
+      console.table(names);
+
+      // menghapus nilai array
+      delete names[1];
+      console.table(names);
+
+      console.log(names.length);
+      //   // perlu diingat
+      //   tidak ada batasan tipe data
+      //   bisa memasukan array ke dalam array jika kita mau
     </script>
   </body>
 </html>
