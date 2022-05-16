@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // operator ternary
+      // if yang lebih simpel sederhana
+
+      // tanpa ternary operator
+      const nilai = 70;
+      let ucapan;
+
+      if (nilai >= 60) {
+        ucapan = "selamat anda lulus";
+      } else {
+        ucapan = "anda tidak lulus";
+      }
+      document.writeln(`${ucapan}`);
+
+      // dengan ternary operator
+      const lulus = 70;
+      sarat = lulus >= 80 ? "anda lulus" : "anda tidak lulus";
+      document.writeln(sarat);
+    </script>
+  </body>
+</html>
