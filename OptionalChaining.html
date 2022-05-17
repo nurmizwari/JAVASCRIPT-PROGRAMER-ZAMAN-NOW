@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // optional chaining (?)  untuk mengecek property di object nullish atau tidak
+      // nullish adalah null/undefined
+
+      const person = {
+        addres: {
+          country: "indonesia",
+          negara: "Arab",
+        },
+      };
+      let country = person?.addres?.country; // ? ini  optional chaining
+      document.writeln(country); // hasilnya undefined kalau propertynya dihapus
+    </script>
+  </body>
+</html>
