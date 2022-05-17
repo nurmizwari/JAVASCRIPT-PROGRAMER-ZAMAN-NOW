@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //nullish coalescing operator
+      // mirip seperti operator ternary
+      // untuk mengecek jika nilai variable itu null/undefined
+      // maka kita bisa set nilai baru
+
+      // tanpa nullish coalescing operator
+      let parameter;
+      let data = parameter;
+      if (data === undefined || data == null) {
+        data = "Nilai Default";
+      }
+      document.writeln(data);
+
+      // dengan nullish coalescing operator
+
+      data = parameter ?? "nilai default";
+      document.writeln(data);
+    </script>
+  </body>
+</html>
