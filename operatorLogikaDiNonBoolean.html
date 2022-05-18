@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // operator logika di non boolean
+      // or || dan and &&
+
+      // or dari kiri ke kanan
+      // mengambil nilai pertama yang truthy
+      // jika tidak ada yang truthy maka yang terakhir yang
+      // akan diambil
+
+      console.log("hallo" || 0);
+      console.log("" || 0);
+      console.log("" || []);
+      console.log(0 || "nol");
+      console.log(null || undefined);
+
+      // and &&
+      // dari kiri ke kanan
+      // mengambil nilai pertama yang falsy
+      // jika tidak ada yang falsy , akan ngambil yang paling kanan
+
+      console.log("hallo" && 0);
+      console.log("" && 0);
+      console.log("" && []);
+      console.log(0 && "nol");
+      console.log(null && undefined);
+
+      // contoh penggunaan or
+      let person = {
+        firstname: "nur",
+        lastname: "mizwari group",
+      };
+
+      let country = person.firstname || person.lastname;
+      console.log(country); // hasilnya nur karena truthy pertama
+
+      // contoh penggunaan and
+      let orang = {
+        nama: "nur mizwari",
+        umur: 24,
+      };
+      let lulus = orang.nama && orang.umur;
+      console.log(lulus); // hasilnya 24 karena falsy semua
+    </script>
+  </body>
+</html>
