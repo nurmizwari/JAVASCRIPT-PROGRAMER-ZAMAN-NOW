@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // with statement
+      // untuk memanggil property object tanpa menulis nama object nya
+      // untukk menurunkan sebuah scope data
+      // TIDAK DI REKOMENDASIKAN UNTUK DIPAKE
+      // KARENA BISA MEMBUAT AMBIGU
+
+      const nama = {
+        firstName: "nur mizwari",
+        middleName: "ganteng banget",
+        lastName: "atuh jelas",
+      };
+
+      // tanpa with statement
+      console.log(nama.firstName);
+      console.log(nama.middleName);
+      console.log(nama.lastName);
+      // dengan with statement
+      with (nama) {
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+    </script>
+  </body>
+</html>
