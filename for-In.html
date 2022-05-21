@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // for in
+      // untuk meng iterasi / mengecek property sebuah object / array
+      // array lebih baik pake for of
+
+      // object
+      const person = {
+        firstName: "eko",
+        middleName: "khannedy",
+        lastName: "khannedy",
+      };
+
+      for (const property in person) {
+        document.writeln(`<p>property ${property}:${person[property]}</p>`);
+      }
+
+      // for in untuk array
+      // mengambil index
+
+      let nilai = ["nur", "mizwari"];
+      for (let index in nilai) {
+        document.writeln(`<p>index ke ${index} = ${nilai[index]}</p>`);
+      }
+    </script>
+  </body>
+</html>
