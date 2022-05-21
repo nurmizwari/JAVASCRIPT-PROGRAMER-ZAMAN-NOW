@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // perulangan for of
+      // digunakan untuk meng iterasi sebuah value dari array, string dll
+      // untuk object tidak bisa
+
+      const names = ["nur mizwari", "mila", "emak"];
+      for (const name of names) {
+        document.writeln(`<p>${name}</p>`);
+      }
+
+      // iterasi string
+      let fullName = "nur mizwari";
+      for (let nama of fullName) {
+        document.writeln(`<p>${nama}</p>`);
+      }
+    </script>
+  </body>
+</html>
